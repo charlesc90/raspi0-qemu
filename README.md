@@ -19,9 +19,7 @@ Rename the image: <br />
 I copied the DTB and kernel from one of my Raspberry Pi Zero W
 
 I updated the Pi Zero's software and firmware before copying the kernel and DTB: <br />
-``sudo apt update
-sudo apt upgrade -y
-
-sudo rpi-update
-
-sudo reboot``
+``sudo apt update``
+``sudo apt upgrade -y``
+``sudo rpi-update``
+``sudo reboot``
