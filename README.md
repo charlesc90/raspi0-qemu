@@ -7,21 +7,21 @@ Download the newest Raspberry Pi OS image:
 https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img.xz
 
 Decompress the image:
-xz --decompress raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img.xz --verbose
+``xz --decompress raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img.xz --verbose``
 
 Resize the image to base-2:
-qemu-img resize -f raw raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img 4096M
+``qemu-img resize -f raw raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img 4096M``
 
 Rename the image:
-mv raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img -v pi.img
+``mv raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img -v pi.img``
 
 # Kernel and DTB
 I copied the DTB and kernel from one of my Raspberry Pi Zero W
 
 I updated the Pi Zero's software and firmware before copying the kernel and DTB:
-sudo apt update
+``sudo apt update
 sudo apt upgrade -y
 
 sudo rpi-update
 
-sudo reboot
+sudo reboot``
